@@ -60,14 +60,18 @@ sudo ./aws/install
 
 # 4. Verify
 aws --version
+```
 
 ![AWS CLI installation verified](./img/2_verify_install.webp)
 
+```bash
 # 5. Configure with your IAM user credentials
 aws configure
 # Prompts for: Access Key ID, Secret Access Key, region, output format
 
 # 6. Confirm configuration
+
+```
 ![AWS configuration confirmed](./img/3_confirm_config.webp)
 
 
@@ -161,4 +165,4 @@ provider "aws" {
 ---
 
 
-*Tags: #30DayTerraformChallenge #TerraformSetup #AWS #DevOps #IaC*
+<sub>Tags: #30DayTerraformChallenge #TerraformSetup #AWS #DevOps #IaC*</sub>
