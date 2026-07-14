@@ -186,4 +186,4 @@ to watch for:)*
 
 ### Blog Post
 
-T
+[Medium blog](https://medium.com/@eve.maina/deploying-a-highly-available-web-app-on-aws-using-terraform-cfebd49ee812)
