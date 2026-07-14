@@ -1,0 +1,68 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>High availability illustration</title>
+  <desc>A bold title reading High availability above an illustration of an orange load balancer node distributing connections down to three white server towers, each glowing with a small signal arc on top, set against a deep indigo background.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#13172E"/>
+      <stop offset="100%" stop-color="#232B55"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="630" fill="url(#bg)"/>
+
+  <text x="600" y="88" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="58" font-weight="700" fill="#FFFFFF">High availability</text>
+  <rect x="555" y="108" width="90" height="6" rx="3" fill="#FF9900"/>
+
+  <rect x="130" y="165" width="940" height="420" rx="48" fill="#1D2452" opacity="0.55"/>
+
+  <g stroke="#565C8E" stroke-width="3">
+    <line x1="600" y1="272" x2="350" y2="382"/>
+    <line x1="600" y1="272" x2="600" y2="382"/>
+    <line x1="600" y1="272" x2="850" y2="382"/>
+  </g>
+
+  <circle cx="600" cy="222" r="52" fill="#FF9900"/>
+  <circle cx="583" cy="207" r="14" fill="#FFC266" opacity="0.85"/>
+  <circle cx="600" cy="222" r="7" fill="#FFFFFF"/>
+  <circle cx="578" cy="207" r="5" fill="#FFFFFF"/>
+  <circle cx="622" cy="207" r="5" fill="#FFFFFF"/>
+  <circle cx="578" cy="238" r="5" fill="#FFFFFF"/>
+  <circle cx="622" cy="238" r="5" fill="#FFFFFF"/>
+  <g stroke="#FFFFFF" stroke-width="2">
+    <line x1="600" y1="222" x2="578" y2="207"/>
+    <line x1="600" y1="222" x2="622" y2="207"/>
+    <line x1="600" y1="222" x2="578" y2="238"/>
+    <line x1="600" y1="222" x2="622" y2="238"/>
+  </g>
+
+  <g>
+    <rect x="292" y="392" width="140" height="200" rx="18" fill="#8C4FFF" opacity="0.35"/>
+    <rect x="280" y="380" width="140" height="200" rx="18" fill="#F5F3FF"/>
+    <path d="M310 372a40 40 0 0 1 80 0" fill="none" stroke="#FF9900" stroke-width="4" stroke-linecap="round"/>
+    <rect x="298" y="402" width="104" height="14" rx="7" fill="#8C4FFF"/>
+    <rect x="298" y="428" width="104" height="14" rx="7" fill="#FF9900"/>
+    <rect x="298" y="454" width="104" height="14" rx="7" fill="#8C4FFF"/>
+    <circle cx="308" cy="560" r="7" fill="#2E7D32"/>
+  </g>
+
+  <g>
+    <rect x="542" y="392" width="140" height="200" rx="18" fill="#8C4FFF" opacity="0.35"/>
+    <rect x="530" y="380" width="140" height="200" rx="18" fill="#F5F3FF"/>
+    <path d="M560 372a40 40 0 0 1 80 0" fill="none" stroke="#FF9900" stroke-width="4" stroke-linecap="round"/>
+    <rect x="548" y="402" width="104" height="14" rx="7" fill="#8C4FFF"/>
+    <rect x="548" y="428" width="104" height="14" rx="7" fill="#FF9900"/>
+    <rect x="548" y="454" width="104" height="14" rx="7" fill="#8C4FFF"/>
+    <circle cx="558" cy="560" r="7" fill="#2E7D32"/>
+  </g>
+
+  <g>
+    <rect x="792" y="392" width="140" height="200" rx="18" fill="#8C4FFF" opacity="0.35"/>
+    <rect x="780" y="380" width="140" height="200" rx="18" fill="#F5F3FF"/>
+    <path d="M810 372a40 40 0 0 1 80 0" fill="none" stroke="#FF9900" stroke-width="4" stroke-linecap="round"/>
+    <rect x="798" y="402" width="104" height="14" rx="7" fill="#8C4FFF"/>
+    <rect x="798" y="428" width="104" height="14" rx="7" fill="#FF9900"/>
+    <rect x="798" y="454" width="104" height="14" rx="7" fill="#8C4FFF"/>
+    <circle cx="808" cy="560" r="7" fill="#2E7D32"/>
+  </g>
+</svg>
