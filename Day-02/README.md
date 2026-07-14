@@ -1,4 +1,4 @@
-# Day 02 — Setting Up Terraform, AWS CLI, and Your AWS Environment
+# Day 02 - Setting Up Terraform, AWS CLI, and Your AWS Environment
 
 ## Overview
 
@@ -14,7 +14,7 @@ Before touching any tools, the AWS account needs to be locked down
 properly. Root account misuse is one of the most common and
 expensive mistakes in cloud work.
 
-- Created an IAM user with admin privileges — the root account is
+- Created an IAM user with admin privileges - the root account is
   left untouched after initial setup. Some root actions cannot be
   undone.
 - Enabled MFA on the root account for an extra layer of security.
@@ -86,9 +86,9 @@ throughout this challenge.
 IDE of choice for this challenge: Visual Studio Code.
 
 Two extensions to install immediately:
-- **HashiCorp Terraform** — syntax highlighting, autocompletion,
+- **HashiCorp Terraform** - syntax highlighting, autocompletion,
   and formatting for `.tf` files
-- **AWS Toolkit** — browse and interact with AWS resources directly
+- **AWS Toolkit** - browse and interact with AWS resources directly
   from VS Code
 
 ---
@@ -102,7 +102,7 @@ the provider block.
 # 1. Navigate to your project folder
 cd ~/Desktop/terraform-30-day-challenge/day02-setup
 
-# 2. Initialise Terraform — downloads the AWS provider plugin
+# 2. Initialise Terraform - downloads the AWS provider plugin
 terraform init
 ```
 ![Terraform init test](./img/4_test.webp)
@@ -142,9 +142,9 @@ provider "aws" {
 ```
 
 **What each block does:**
-- `terraform {}` — tells Terraform which plugins to download.
+- `terraform {}` - tells Terraform which plugins to download.
   Think of it like `package.json` for your infrastructure.
-- `provider "aws" {}` — configures the downloaded plugin.
+- `provider "aws" {}` - configures the downloaded plugin.
   Sets the region and picks up credentials from the environment
   automatically.
 
@@ -153,12 +153,12 @@ provider "aws" {
 ## Key Takeaways
 
 - Never use the root account for day-to-day AWS work
-- Terraform credentials come from `~/.aws/credentials` — you do
+- Terraform credentials come from `~/.aws/credentials` - you do
   not need to hardcode them in your `.tf` files
 - `terraform init` must be run once in every new project folder
   before any other Terraform command
 - The `.terraform/` folder and `.terraform.lock.hcl` are
-  auto-generated — do not edit them manually
+  auto-generated - do not edit them manually
 - Both are safe to commit to Git; the actual provider binary
   inside `.terraform/` is excluded by `.gitignore`
 

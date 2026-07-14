@@ -1,7 +1,7 @@
 # 30-Day Terraform Challenge
 
 A 30-day commitment to getting real hands-on experience with
-Terraform — building actual cloud infrastructure, breaking things,
+Terraform - building actual cloud infrastructure, breaking things,
 understanding why they broke, and fixing them.
 
 Every day is a new concept, a real lab, and a written record

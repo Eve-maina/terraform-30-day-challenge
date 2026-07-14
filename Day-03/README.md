@@ -1,10 +1,10 @@
-# Day 03 — Deploying Your First Server with Terraform
+# Day 03 - Deploying Your First Server with Terraform
 
 ## Overview
 
 Day 3 is where things got real. After two days of setup and theory,
 today was about actually deploying infrastructure. Using Terraform,
-I provisioned a web server on AWS EC2 from scratch — no console
+I provisioned a web server on AWS EC2 from scratch - no console
 clicking, just code.
 
 By the end of this lab a real server was running on AWS, accessible
@@ -24,8 +24,8 @@ from a browser, and provisioned entirely through Terraform.
 ## Files
 ```
 Day-03/
-├── main.tf       — provider, security group, EC2 instance, output
-└── README.md     — this file
+├── main.tf       - provider, security group, EC2 instance, output
+└── README.md     - this file
 ```
 
 ---
@@ -81,7 +81,7 @@ terraform plan
 terraform apply
 ```
 
-**8. Verify — paste the output public IP into your browser**
+**8. Verify - paste the output public IP into your browser**
 
 **9. Clean up**
 ```bash
@@ -98,13 +98,13 @@ terraform destroy
 - How the security group and EC2 instance resources reference
   each other
 - How user data scripts work on first boot
-- The full Terraform workflow — init, plan, apply, destroy
+- The full Terraform workflow - init, plan, apply, destroy
 
 ---
 
 ## Lessons Learned
 
-- AMI IDs are region specific — never copy one from a tutorial
+- AMI IDs are region specific - never copy one from a tutorial
   without verifying it exists in your region
 - Always check which instance types are eligible before deploying
 - The output block saves you from hunting for your server's IP
