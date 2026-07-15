@@ -137,7 +137,7 @@ Terraform never declared in the first place, it will never check at all.
 
 ### Blog Post
 
-*(Link to be added once published.)*
+[Medium blog](https://medium.com/@eve.maina/state-vs-reality-what-terraform-tfstate-really-controls-6ccca8958694)
 
 ---
 
