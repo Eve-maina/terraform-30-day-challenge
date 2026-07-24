@@ -99,11 +99,6 @@ below.
 
 ### Challenges and Fixes
 
-- Bucket names must be globally unique across *all* AWS accounts, not just
-  your own - a name that seems free can still collide.
-- Outside `us-east-1`, `aws s3api create-bucket` requires
-  `--create-bucket-configuration LocationConstraint=<region>` or the
-  request fails; inside `us-east-1`, that flag has to be omitted instead.
 - The DynamoDB table's partition key must be named exactly `LockID` (type
   String) - Terraform's S3 backend looks for that attribute by name, not
   by position.
