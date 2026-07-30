@@ -151,26 +151,6 @@ splitting networking out as its own layer to actually exercise this.
 Full write-ups, including the honest trade-offs between the two isolation
 strategies, in the blog posts below.
 
-### Challenges and Fixes
-
-- Initial custom VPC/subnet/security group setup added too much
-  networking surface for a lesson about state isolation - simplified to
-  the account's default VPC via `data "aws_vpc" "default"`, then dropped
-  even that in favor of letting AWS resolve the default VPC implicitly
-  with no `subnet_id` or security group specified at all.
-- `instance_type` needed to differ per environment. Workspaces solved this
-  with `map(string)` keyed by `terraform.workspace`; File Layouts solved
-  it more simply, since each directory only ever represents one
-  environment, a plain `string` default is enough.
-- Assumed switching workspaces would somehow isolate code, not just
-  state - it doesn't. Confirmed that a code change applies to every
-  workspace's *next* apply, but not retroactively to environments you
-  haven't re-applied yet.
-- Saw an unexplained `env:/` folder in S3 after the Workspaces setup - it
-  is not something configured; it's the S3 backend's default
-  `workspace_key_prefix`, applied automatically to every non-default
-  workspace.
-
 ### Blog Posts
 
 - [Medium blog](https://medium.com/@eve.maina/terraform-state-isolation-explained-workspaces-file-layouts-and-where-each-breaks-19d83449dbcc)
