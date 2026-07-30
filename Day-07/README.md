@@ -175,6 +175,7 @@ strategies, in the blog posts below.
 
 - [One Terraform Config, Three Environments: A Practical Look at Workspaces](./terraform-workspaces-blog.md) *(draft, pending publish)*
 - [State Isolation: Workspaces vs File Layouts (and When to Use Each)](./workspaces-vs-file-layouts-blog.md) *(draft, pending publish)*
+- [Medium blog](https://medium.com/@eve.maina/terraform-state-isolation-explained-workspaces-file-layouts-and-where-each-breaks-19d83449dbcc)
 
 ---
 
