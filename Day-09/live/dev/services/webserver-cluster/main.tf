@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 module "webserver_cluster" {
-  source = "git::https://github.com/Eve-maina/terraform-30-day-challenge.git//Day-09/modules/services/web-cluster?ref=main"
+  source = "git::https://github.com/Eve-maina/terraform-30-day-challenge.git//Day-09/modules/services/web-cluster?ref=v0.0.2"
 
   cluster_name  = "webservers-dev"
   ami_id        = "ami-0332d564d76dbd8d6"
