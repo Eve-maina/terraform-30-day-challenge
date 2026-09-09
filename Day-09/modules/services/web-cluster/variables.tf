@@ -6,7 +6,7 @@ variable "cluster_name" {
 variable "instance_type" {
   description = "EC2 instance type for the cluster"
   type        = string
-  default     = "t2.micro"
+  default     = "t3.small"
 }
 
 variable "min_size" {

@@ -42,7 +42,7 @@ output "alb_dns_name" {
 | `subnet_ids`    | List of subnet IDs for the ASG and ALB                 | `list(string)` | —           | yes      |
 | `min_size`      | Minimum number of EC2 instances in the ASG              | `number`       | —           | yes      |
 | `max_size`      | Maximum number of EC2 instances in the ASG              | `number`       | —           | yes      |
-| `instance_type` | EC2 instance type for the cluster                       | `string`       | `"t2.micro"`| no       |
+| `instance_type` | EC2 instance type for the cluster                       | `string`       | `"t3.small"`| no       |
 | `server_port`   | Port the server uses for HTTP                            | `number`       | `8080`      | no       |
 
 ## Outputs
